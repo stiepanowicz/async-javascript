@@ -1,8 +1,3 @@
-const tick = Date.now();
-const consoleLogTimeElapsed = (v) => console.log(`elapsed: ${Date.now() - tick}ms`);
-const log = (v) => { return (`elapsed: ${Date.now() - tick}ms`)};
-
-
 const MAX_PRIME = 1000000;
 
 function isPrime(n) {
@@ -33,9 +28,7 @@ const output = document.querySelector("#output");
 document.querySelector("#generate").addEventListener("click", () => {
   const primes = generatePrimes(quota.value);
   console.log(primes);
-  consoleLogTimeElapsed(primes);
-  const elapsed = log(primes);
-  output.textContent = `Finished generating ${quota.value} primes. Time ${elapsed}.`;
+  output.textContent = `Finished generating ${quota.value} primes.`;
 });
 
 document.querySelector("#reload").addEventListener("click", () => {

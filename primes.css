@@ -10,7 +10,8 @@ body {
     margin: 0;
   }
   
-  .container, #output {
+  .container, #output, .event-log {
+    margin-top: 20px;
     width: 80%;
     max-width: 600px;
     padding: 20px;
@@ -65,7 +66,6 @@ body {
   }
   
   #output {
-    margin-top: 20px;
     min-height: 50px;
     text-align: center;
     word-wrap: break-word;
